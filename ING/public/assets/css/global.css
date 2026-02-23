@@ -1,0 +1,80 @@
+.section {
+  padding: 80px 5%;
+  background: #f6f8fb;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+/* GRID */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* TARJETAS */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* PLAN DESTACADO */
+.card.featured {
+  border: 2px solid #16a34a;
+  transform: scale(1.03);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background: #16a34a;
+  color: white;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.price {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.btn-primary {
+  display: block;
+  text-align: center;
+  background: #16a34a;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #15803d;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
